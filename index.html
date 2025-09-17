@@ -104,23 +104,49 @@
 								
 								<article class="18th Leadership Training for Scouts">
     <a href="" class="image fit">
-        <img src="images/.jpg" alt="leadership trained scout" />
+        <img src="images/scouts.jpeg" alt="leadership trained scout" />
     </a>
     <div class="content">
         <header>
             <h2><a href="#">LT</a></h2>
         </header>
         <p class="preview">
-			LT
+			I participated in the 18th Scouts Leadership Training in Norbuling Central School, Gelephu.
+			 The training brought together scouts from across Bhutan and provided a comprehensive platform to develop leadership and life skills.
         </p>
         <p class="full" style="display:none;">
-            LT
+            During the program, I acquired skills in teamwork, effective communication, problem-solving, decision-making, and service-oriented leadership. The training emphasized discipline, self-reliance, and community engagement through practical activities. It also fostered physical and mental resilience, and encouraged scouts to take initiative in planning and coordinating tasks.
+			After completing the training, I applied these skills as the main leader in several scout camps for The Royal Academy students. I also had the opportunity to participate in the Nachung Camp, further strengthening my abilities in mentorship, teamwork, and community service. These experiences allowed me to guide younger scouts, organize activities, and contribute meaningfully to the scouting community.
 		</p>
         <ul class="actions special">
             <li><button class="show-more">Full Story</button></li> <!-- changed from <a> to <button> -->
         </ul>
     </div>
 </article>
+<article class="Golden Youth Award Camp">
+    <a href="" class="image fit">
+        <img src="images/gya.jpg" alt="GYA" />
+    </a>
+    <div class="content">
+        <header>
+            <h2><a href="#">GYA Camp</a></h2>
+        </header>
+        <p class="preview">
+			I participated in the 17th Golden Youth Award Camp, a week-long program that brings together outstanding Class 10 students from across Bhutan. The camp recognizes students for their academic excellence, leadership potential, and active involvement in extracurricular activities.
+
+During the camp we engaged in activities such as leadership training, knowledge sharing, and discussions on innovative ideas. 
+ </p>
+        <p class="full" style="display:none;">
+            This year’s theme, “Climate Change Innovation,” focused on applying design thinking and creating innovative solutions to address climate-related challenges.
+			The camp provided a valuable platform to develop leadership skills, improve communication and collaboration, and explore entrepreneurship and climate innovation.
+
+		</p>
+        <ul class="actions special">
+            <li><button class="show-more">Full Story</button></li> <!-- changed from <a> to <button> -->
+        </ul>
+    </div>
+</article>
+
 								<article class="PROJECT WHITEGOLD">
     <a href="" class="image fit">
         <img src="images/.jpg" alt="whitegold" />
@@ -159,25 +185,7 @@
         </ul>
     </div>
 </article>
-								<article class="Golden Youth Award Camp">
-    <a href="" class="image fit">
-        <img src="images/.jpg" alt="GYA" />
-    </a>
-    <div class="content">
-        <header>
-            <h2><a href="#">GYA Camp</a></h2>
-        </header>
-        <p class="preview">
-			GYA
-        </p>
-        <p class="full" style="display:none;">
-            GYA
-		</p>
-        <ul class="actions special">
-            <li><button class="show-more">Full Story</button></li> <!-- changed from <a> to <button> -->
-        </ul>
-    </div>
-</article>
+								
 							</section>
 
 						<!-- Footer -->
@@ -266,12 +274,13 @@
 </html>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.fabacademy .show-more').forEach(button => {
+    document.querySelectorAll('.show-more').forEach(button => {
         button.addEventListener('click', function() {
-            const article = this.closest('.fabacademy');
+            const article = this.closest('article');
             article.querySelector('.full').style.display = 'block';
             this.style.display = 'none'; // hide the button
         });
     });
 });
 </script>
+
